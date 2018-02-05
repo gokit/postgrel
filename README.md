@@ -34,6 +34,11 @@ docker run -it ${image_name} /bin/pglunch
 
 ## Environment Varialbes
 
+- `PGFORK`
+
+Set to `true` (ie. `env PGFORK=true`) to run postgres as background program.
+
+
 You can set values which the db uses to start off: 
 
 

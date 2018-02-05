@@ -122,3 +122,11 @@ if [ ! -s "$PGDATA/PG_VERSION" ]; then
 
 fi
 
+
+# Should we lunch postgres in background or as root program
+if [ $PGFORK == "true" ]; then
+ postgres &
+ echo "Postgres server is ready for you!"
+else
+ postgres
+fi

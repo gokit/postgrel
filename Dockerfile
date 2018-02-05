@@ -150,5 +150,8 @@ RUN chmod +x /bin/pglunch
 
 VOLUME /data/db/postgres/data
 
+RUN adduser -S -G postgres postgres.
+USER postgres
+
 EXPOSE 5432
 
